@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #fff5e4;
+}
+
+/* header and navbar */
+header {
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffe6ba;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* border:  1px solid red; */
+}
+
+header img {
+    margin-left: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, .8);
+}
+
+/* create style navbar */
+#nav-bar {
+    width: 30%;
+    text-align: justify;
+    font-size: 1.3rem;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    margin-left: 40px;
+    color: #bf8e02;
+    font-weight: 700;
+
+    /* border:  1px solid red; */
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.video {
+    width: 60%;
+    height: 350px;
+    display: block;
+    margin: 30px auto;
+    box-shadow: 2px 6px 8px 0px rgba(0, 0, 0, .6);
+    border-radius: 7px;
+    /* border:  1px solid red; */
+
+}
+
+/* formulario email */
+#form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 400px;
+    height: 180px;
+    box-shadow: 0px 1px 8px 0px #bf8d02ea;
+    /* border:  1px solid red; */
+    /* border: 1px solid #bf8e02; */
+
+
+}
+
+/* inputs suscribere */
+#form>label {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: #bf8e02;
+    font-weight: 700;
+
+}
+
+.input {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    outline: none;
+
+}
+
+.input--email {
+    height: 30px;
+    border: none;
+    padding: 2px 0px 2px 20px;
+    font-size: 1rem;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
+
+}
+
+.input--submit {
+    width: 60%;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    color: #fff5e4;
+    background-color: #bf8e02;
+
+}
+
+.input--submit:hover {
+    background-color: #ffe6ba;
+    color: #bf8e02;
+}
+
+/* secciones de productos */
+#home {
+    height: 200px;
+    margin: 20px 0;
+}
+
+.seccion {
+    height: 550px;
+
+}
+
+.seccion>h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #bf8e02;
+}
+
+/* prodcts seccion */
+
+/* cads products */
+.categoria {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    margin: 0 10px;
+    text-align: center;
+    box-shadow: 0px 1px 8px 0px #bf8d02ea;
+
+
+    /* border:  1px solid red; */
+}
+
+.card>img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
+}
+
+.card h2 {
+    color: #2b1f03;
+    font-size: 1.8rem;
+
+}
+
+/* botones categorias de seccion */
+a[href="#"] {
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: inline-block;
+    color: #fff5e4;
+    text-decoration: none;
+    text-align: center;
+    background-color: #bf8e02;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+a[href="#"]:hover {
+    background-color: #ffe6ba;
+    color: #bf8e02;
+}
+
+/* secion about */
+.about {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 40px;
+    width: 60%;
+    font-size: 1.4rem;
+    color: #2b1f03;
+    border-radius: 50px;
+    box-shadow: 0px 1px 8px 0px #bf8d02ea;
+
+    /* border: 1px solid red; */
+}
+
+#about {
+    margin-top: 40px;
+    height: 350px;
+}
+
+
+
+/* media jquerys------ */
+@media (max-width: 800px) {
+    .seccion {
+        height: auto;
+    }
+
+    .categoria {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin-top: 20px;
+
+    }
+
+    #about {
+        margin: 50px 0px 0px 0px;
+    }
+
+    #nav-bar {
+        display: flex;
+        width: auto;
+        margin: 0px 50px 0px 0px;
+        flex-wrap: nowrap;
+    }
+
+    .nav-link {
+        margin: 10px;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Product Landing Page</title>
+</head>
+
+<body>
+  <header id="header">
+    <img id="header-img"
+      src="https://img.esgentside.com/article/1024/logo/a-style-es-un-logo-de-una-marca-de-ropa-nos-preguntamos-que-venderan_0ea9cf54acb948db887f2f455c22801f05509f1f.jpg"
+      alt="Logo">
+    <nav id="nav-bar">
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#products">Products</a>
+      <a class="nav-link" href="#about">About Us</a>
+    </nav>
+    </div>
+  </header>
+  <!-- <video id="video">
+        <source src="https://www.youtube.com/watch?v=EamyC3rIp-0&list=RDXq-UVOxC4gs&index=16">
+      </video>
+  -->
+  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/B5ElvV5cyFg"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+  <section id="home">
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <label for="email">Suscribete</label>
+      <input class="input input--email" id="email" type="email" placeholder="@example.com" name="email" required>
+      <input class="input input--submit" id="submit" type="submit" name="submit" value="Enviar">
+    </form>
+  </section>
+  <section id="products" class="seccion">
+    <h1>Products</h1>
+
+    <div class="categoria">
+      <div class="card card-mujer ">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS17tbBjoQFrvmzSZRbPZXERv03CVfOQOrUzw&usqp=CAU">
+        <h2>Mujeres</h2>
+        <a href="#">Ver más</a>
+      </div>
+      <div class="card card-hombre">
+        <img
+          src="data:image/jpeg;base64,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">
+        <h2>Hombres</h2>
+        <a href="#">Ver más</a>
+      </div>
+      <div class="card card-ninos">
+        <img src="https://i.pinimg.com/originals/4a/cf/78/4acf78fbb507b9a80d5d205b7d242d48.jpg">
+        <h2>Niños</h2>
+        <a href="#">Ver más</a>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="seccion">
+    <h1>About Us</h1>
+    <p class="about"><q>Somos la definición de moda, la moda (del francés mode y del latín modus ‘modo, medida’) es un
+        conjunto de prendas de vestir, adornos y complementos basados en gustos, usos y costumbres que se utilizan por
+        una mayoría durante un periodo de tiempo determinado y que marcarán tendencia según la duración del mismo;
+        aunque también la moda se refiere a algo que se repite muchas veces, en este caso, las prendas de vestir.</q>
+    </p>
+  </section>
+</body>
+
+</html>
